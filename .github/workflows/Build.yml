@@ -53,13 +53,13 @@ jobs:
           doxygen Doxyfile
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ida-sdk-build-${{ matrix.os }}
           path: build/
 
       - name: Upload documentation
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: docs-${{ matrix.os }}
           path: docs/html/
