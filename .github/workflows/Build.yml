@@ -32,7 +32,7 @@ jobs:
       - name: Install prerequisites (Windows)
         if: runner.os == 'Windows'
         run: |
-          choco install cmake doxygen graphviz -y || exit 0
+          choco install cmake doxygen graphviz -y
           refreshenv
 
       - name: Clone ida-cmake template
